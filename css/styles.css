@@ -1,0 +1,123 @@
+:root {
+    /*  Primary Colors  */
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+
+    /* font-family: */
+    --Josefin-sans: 'Josefin Sans', sans-serif;
+    --Alata: 'Alata', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    /* min-height: 100vh; */
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 1.5rem;
+    font-family: var(--Josefin-sans);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*      Header     */
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 3.5rem;
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+}
+
+.header__logo {
+    z-index: 3;
+}
+
+.header .logo__img {
+    display: block;
+    width: 12rem;
+}
+
+.button__hamburger {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 3;
+}
+
+.nav {
+    position: absolute;
+}
+
+.navbar {
+    display: none;
+}
+
+.nav.nav-mobile-active {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Black);
+    margin-top: -35px;
+    margin-left: -20px;
+    z-index: 2;
+}
+
+.nav.nav-mobile-active > .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 2rem;
+}
+
+.nav.nav-mobile-active > .navbar .navbar__item {
+    padding: 0.7rem 0;
+}
+
+.nav.nav-mobile-active > .navbar .navbar__link {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+
+/*          HERO        */
+.hero {
+    position: relative;
+}
+
+.hero__img {
+    width: 100%;
+}
+
+.hero__h1 {
+    position: absolute;
+    top: 35%;
+    border: 2px solid var(--White);
+    margin: 0 2rem;
+    padding: 2rem;
+    font-size: 3.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--White);
+}

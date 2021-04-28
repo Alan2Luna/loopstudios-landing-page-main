@@ -2,26 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  Immersive experiences that deliver
+  <header class="header">
+    <a class="header__logo" href="#">
+      <img class="logo__img" src="./images/logo.svg" alt="logo loopstudios">
+    </a>
+    <button class="button__hamburger">
+      <img class="button__hamburger-img" src="./images/icon-hamburger.svg" alt="">
+    </button>
+    <nav class="nav" role="nagivator">
+      <ul class="navbar">
+        <li class="navbar__item"><a class="navbar__link" href="#">about</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">careers</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">events</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">products</a></li>
+        <li class="navbar__item"><a class="navbar__link" href="#">support</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <picture>
+      <source type="image/jpg" media="(min-width: 750px)" srcset="./images/desktop/image-hero.jpg">
+      <source type="image/jpg" media="(min-width: 220px)" srcset="./images/mobile/image-hero.jpg">
+      <img class="hero__img" src="./images/desktop/image-hero.jpg" alt="">
+    </picture>
+    <h1 class="hero__h1">
+      Immersive experiences that deliver
+    </h1>
+  </section>
+  <!-- 
 
   The leader in interactive VR
 
@@ -49,11 +66,12 @@
   Products
   Support
 
-  © 2021 Loopstudios. All rights reserved.
+  © 2021 Loopstudios. All rights reserved. -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/index.js"></script>
 </body>
 </html>
