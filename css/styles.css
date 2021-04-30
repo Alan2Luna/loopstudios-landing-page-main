@@ -153,6 +153,21 @@ a {
     line-height: 1.5;
 }
 
+/*      CREATIONS       */
+.creations {
+    padding: 0 2rem;
+}
+
+.creations__title {
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.creations__img {
+    width: 100%;
+}
+
 /*   1    FOOTER        */
 .footer {
     background-color: var(--Black);
