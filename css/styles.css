@@ -17,8 +17,23 @@
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%;*/
+    font-size: 10px;
 }
+
+
+@media (min-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 
 body {
     margin: 0;
@@ -78,8 +93,8 @@ a {
     width: 100vw;
     height: 100vh;
     background-color: var(--Black);
-    margin-top: -35px;
-    margin-left: -20px;
+    margin-top: -3.5rem;
+    margin-left: -2rem;
     z-index: 2;
 }
 
@@ -92,7 +107,7 @@ a {
 }
 
 .nav.nav-mobile-active > .navbar .navbar__item {
-    padding: 0.7rem 0;
+    padding: 1rem 0;
 }
 
 .nav.nav-mobile-active > .navbar .navbar__link {
@@ -150,30 +165,107 @@ a {
     font-family: var(--Alata);
     color: var(--Dark-Gray);
     font-size: 1.4rem;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 /*      CREATIONS       */
 .creations {
-    padding: 0 2rem;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
 }
 
 .creations__title {
-    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 2.8rem;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.creations__img {
+.creations__button {
+    background-color: var(--White);
+    border: 1px solid var(--Very-Dark-Gray);
+    padding: .9rem 3.7rem;
+    margin-top: 1.5rem;
+    font-family: var(--Alata);
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.creations__button:hover {
+    background-color: var(--Black);
+    color: var(--White);
+    border-color: var(--Black);
+}
+
+.desktop {
+    display: none;
+}
+
+.creation__container {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.creation__overlay {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
     width: 100%;
+    height: 100%;
+    background: linear-gradient(50deg, rgb(0 0 0 / 67%), transparent)
+}
+
+.creation__title {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0 0 1.6rem 1.6rem;
+    color: white;
+} 
+
+.creation__img {
+    width: 100%;
+    display: block;
 }
 
 /*   1    FOOTER        */
 .footer {
+    padding: 4rem 0;
     background-color: var(--Black);
     text-align: center;
 }
 
+.footer__img {
+    width: 12rem;
+}
+
+.footer-nav {
+    padding: 3rem 0;
+}
+
+.footer-nav__item {
+    margin-bottom: 1.8rem;
+}
+
+.footer-nav__link {
+    text-transform: capitalize;
+    
+}
+
+.container__social {
+    margin-bottom: 1.5rem;
+}
+
+.social__link {
+    margin: 0 .5rem;
+}
+
 .footer__rights {
-    color: white;
+    color: var(--Dark-Gray);
+    font-weight: 600;
+    margin: 0;
 }

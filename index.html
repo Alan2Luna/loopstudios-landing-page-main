@@ -56,85 +56,118 @@
     <section class="creations">
       <div class="creations-header">
         <h2 class="creations__title">Our creations</h2>
-        <button class="creations__button">See all</button>
+        <button class="creations__button desktop">see all</button>
       </div>
-      <section class="creations__content">
-        <div class="creations__container">
+      <section class="creations__content mobile">
+        <div class="creation__container">
           <picture>
             <source srcset="./images/desktop/image-deep-earth.jpg" media="(min-width: 600px)">
-            <img class="creations__img" src="./images/mobile/image-deep-earth.jpg" alt="">
+            <img class="creation__img" src="./images/mobile/image-deep-earth.jpg" alt="">
           </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">deep <br/> earth</h3>
+          </div>
         </div>
-        <div>
+        <div class="creation__container">
           <picture>
             <source srcset="./images/desktop/image-night-arcade.jpg" media="(min-width: 600px">
-            <img class="creations__img" src="./images/mobile/image-night-arcade.jpg" alt="">
+            <img class="creation__img" src="./images/mobile/image-night-arcade.jpg" alt="">
           </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">night <br/> arcade</h3>
+          </div>
         </div>
-        <div>
+        <div class="creation__container">
           <picture>
             <source srcset="./images/desktop/image-soccer-team.jpg" media="(min-width: 600px">
-            <img class="creations__img" src="./images/mobile/image-soccer-team.jpg" alt="">
+            <img class="creation__img" src="./images/mobile/image-soccer-team.jpg" alt="">
           </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">soccer <br/>team vr</h3>
+          </div>
         </div>
-        <div>
+        <div class="creation__container">
           <picture>
             <source srcset="./images/desktop/image-grid.jpg" media="(min-width: 600px">
-            <img class="creations__img" src="./images/mobile/image-grid.jpg" alt="">
+            <img class="creation__img" src="./images/mobile/image-grid.jpg" alt="">
           </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">the<br/> grid</h3>
+          </div>
+        </div>
+        <div class="creation__container">
+          <picture>
+            <source srcset="./images/desktop/image-from-above.jpg" media="(min-width: 600px">
+            <img class="creation__img" src="./images/mobile/image-from-above.jpg" alt="">
+          </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">from up <br/> above vr</h3>
+          </div>
+        </div>
+        <div class="creation__container">
+          <picture>
+            <source srcset="./images/desktop/image-pocket-borealis.jpg" media="(min-width: 600px">
+            <img class="creation__img" src="./images/mobile/image-pocket-borealis.jpg" alt="">
+          </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">pocket <br/> borealis</h3>
+          </div>
+        </div>
+        <div class="creation__container">
+          <picture>
+            <source srcset="./images/desktop/image-curiosity.jpg" media="(min-width: 600px">
+            <img class="creation__img" src="./images/mobile/image-curiosity.jpg" alt="">
+          </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">the <br/> curiosity</h3>
+          </div>
+        </div>
+        <div class="creation__container">
+          <picture>
+            <source srcset="./images/desktop/image-fisheye.jpg" media="(min-width: 600px">
+            <img class="creation__img" src="./images/mobile/image-fisheye.jpg" alt="">
+          </picture>
+          <div class="creation__overlay">
+            <h3 class="creation__title">make it <br/> fisheye</h3>
+          </div>
         </div>
       </section>
+      <button class="creations__button mobile">see all</button>
     </section>
   </main>
   <footer class="footer">
-    <section>
-      <a href="#">
-        <img src="./images/logo.svg" alt="logo loopstudios">
+    <section class="footer-container-1">
+      <a class="footer__logo" href="#">
+        <img class="footer__img" src="./images/logo.svg" alt="logo loopstudios">
       </a>
-      <nav>
-        <li><a href="">about</a></li>
-        <li><a href="">careers</a></li>
-        <li><a href="">events</a></li>
-        <li><a href="">products</a></li>
-        <li><a href="">support</a></li>
+      <nav class="footer-nav">
+        <ul>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">about</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">careers</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">events</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">products</a></li>
+          <li class="footer-nav__item"><a class="footer-nav__link" href="#">support</a></li>
+        </ul>
       </nav>
     </section>
-    <section>
-      <div>
-        <a href="">
+    <section class="footer-container-2">
+      <div class="container__social">
+        <a class="social__link" href="">
           <img src="./images/icon-facebook.svg" alt="">
         </a>
-        <a href="">
+        <a class="social__link" href="">
           <img src="./images/icon-twitter.svg" alt="">
         </a>
-        <a href="">
+        <a class="social__link" href="">
           <img src="./images/icon-pinterest.svg" alt="">
         </a>
-        <a href="">
+        <a class="social__link" href="">
           <img src="./images/icon-instagram.svg" alt="">
         </a>
       </div>
       <p class="footer__rights">© 2021 Loopstudios. All rights reserved.</p>
     </section>
   </footer>
-  <!-- 
-
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  © 2021 Loopstudios. All rights reserved. -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
   <script src="./js/index.js"></script>
 </body>
 </html>
