@@ -41,7 +41,10 @@
   <main class="main">
     <article class="description">
       <div class="description__container-img">
-        <img class="description__img" src="./images/mobile/image-interactive.jpg" alt="">
+        <picture>
+          <source src="./images/desktop/image-interactive.jpg" media="min-width: 750px">
+          <img class="description__img" src="./images/mobile/image-interactive.jpg" alt="">
+        </picture>
       </div>
       <div class="description__content">
         <h2 class="description__title">the leader in interactive vr</h2>
@@ -58,7 +61,7 @@
         <h2 class="creations__title">Our creations</h2>
         <button class="creations__button desktop">see all</button>
       </div>
-      <section class="creations__content mobile">
+      <section class="creations__content">
         <div class="creation__container">
           <picture>
             <source srcset="./images/desktop/image-deep-earth.jpg" media="(min-width: 600px)">
