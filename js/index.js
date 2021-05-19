@@ -16,5 +16,4 @@ const openNavBar = () => {
     }
 }
 
-
 buttonHamburger.addEventListener('click', openNavBar)
